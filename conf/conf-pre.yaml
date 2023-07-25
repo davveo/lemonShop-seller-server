@@ -1,0 +1,39 @@
+env: pre
+log:
+  runtimeRootPath: runtime/
+  logSavePath: logs/
+  logSaveName: log
+  logFileExt: log
+  timeFormat: 20060102
+mysql:
+  base:
+    connMaxLifetime: 60
+    maxIdleConn: 60
+    maxOpenConn: 10
+  read:
+    addr: 127.0.0.1:3306
+    name: lemonShop
+    pass: 123123
+    user: root
+  write:
+    addr: 127.0.0.1:3306
+    name: lemonShop
+    pass: 123123
+    user: root
+redis:
+  addr: 127.0.0.1:6379
+  db: 0
+  maxRetries: 3
+  minIdleConn: 30
+  pass: 123123
+  poolSize: 10
+rabbitmq:
+  host: 127.0.0.1
+  port: 5672
+  username: admin
+  password: admin123
+elasticsearch:
+  host: 127.0.0.1
+  port: 9200
+  username: elastic
+  password: elastic

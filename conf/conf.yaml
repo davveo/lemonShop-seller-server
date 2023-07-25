@@ -1,0 +1,21 @@
+appName: lemonShop
+isUseElasticSearch: false
+isUseRabbitMq: false
+isUseRoutinePool: false
+commonGoRoutinePoolSize: 10
+commonGoRoutinePoolMinuteExpire: 5
+commonGoRoutinePoolMaxBlockingTasks: 0
+accessTokenTimeout: 1200 # 访问token失效时间 单位秒
+refreshTokenTimeout: 1800 # 刷新token失效时间 单位秒
+captchaTimout: 120 # 验证码失效时间 单位秒
+smsCodeTimout: 120 # 短信验证码失效时间 单位秒
+isDemoSite: true #
+ssl: false
+refer:
+  - 'servicewechat.com'  #小程序referer
+  - 'unitradeprod.alipay.com' #支付宝同步回调 referer
+server:
+  runMode: debug
+  httpPort: 8080
+  readTimeOut: 60
+  writeTimeOut: 60
